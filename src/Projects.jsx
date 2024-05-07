@@ -4,6 +4,7 @@ import  CSSicon  from './img/cssicon.webp';
 import  JSicon  from './img/jsicon.webp';
 import  REACTicon  from './img/reacticon.webp';
 import  MYSQLicon from './img/mysqlicon.webp';
+import panolImage from './img/panol-imagen.webp'
 
 
 
@@ -20,8 +21,8 @@ export function Projects() {
         },
         {
             id: 2,
-            img: wordleImage,
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, alias velit. Consequuntur blanditiis id ea hic vel? Expedita officiis quamLorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, alias velit. Consequuntur blanditiis id ea hic vel? Expedita officiis quamLorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, alias velit. Consequuntur blanditiis id ea hic vel? Expedita officiis quamLorem ipsum  ",
+            img: panolImage,
+            text: "Esta página es una plataforma para gestionar eficientemente el inventario de herramientas, permitiendo realizar pedidos, mantener un inventario actualizado automáticamente y gestionar cuentas de usuario de forma segura. ",
             languages: [<HTML />, <CSS />, <JavaScript />, <MySQL />],
             title: "Sistema de gestion 'Pañol'"
         }
