@@ -101,27 +101,35 @@ export function Grid() {
 }
 
 
- function ContactLinks() {
+function ContactLinks() {
   return (
     <article className={`grid-item contact-card span-row-3 `}>
       <article>
         <div>
-          <img src={githubContact} alt="GitHub" />
+          <a href="https://github.com/IgnacioTDeter?tab=overview&from=2024-05-01&to=2024-05-08">
+            <img src={githubContact} alt="GitHub" />
+          </a>
         </div>
         <div>
-          <img src={gmailContact} alt="Linkedin" />
+          <a href="mailto:ignaciotdeter@gmail.com?subject=&body=">
+            <img src={gmailContact} alt="Gmail" />
+          </a>
         </div>
         <div>
-          <img src={linkedinContact} alt="Linkedin" />
+          <a href="https://www.linkedin.com/in/ignacio-deter-3368a2266">
+            <img src={linkedinContact} alt="LinkedIn" />
+          </a>
         </div>
         <div>
-          <img src={cellphoneContact} alt="Telefono" />
+          <a href="https://wa.me/5491136069677?text=¡Hola!">
+            <img src={cellphoneContact} alt="Teléfono" />
+          </a>
         </div>
       </article>
     </article>
-
   );
 }
+
 
 function MySkills() {
   return (
