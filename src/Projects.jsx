@@ -17,14 +17,16 @@ export function Projects() {
             img: wordleImage,
             text: "Wordle es un juego simple, donde los jugadores intentan adivinar una palabra de cinco letras en seis intentos.",
             languages: [<HTML />, <CSS />, <JavaScript />, <React />],
-            title: "Wordle"
+            title: "Wordle",
+            link: <Link linkGithub = "https://github.com/IgnacioTDeter/Proyectos-Web/tree/main/01-wordle" />
         },
         {
             id: 2,
             img: panolImage,
-            text: "Esta página es una plataforma para gestionar eficientemente el inventario de herramientas, permitiendo realizar pedidos, mantener un inventario actualizado automáticamente y gestionar cuentas de usuario de forma segura. ",
+            text: "Plataforma diseñada para gestionar eficientemente el inventario de herramientas, permitiendo realizar pedidos, mantener un inventario actualizado automáticamente y gestionar cuentas de usuario de forma segura. ",
             languages: [<HTML />, <CSS />, <JavaScript />, <MySQL />],
-            title: "Sistema de gestion 'Pañol'"
+            title: "Sistema de gestion 'Pañol'",
+            link: <Link linkGithub = "https://github.com/IgnacioTDeter/Proyecto-Final"  />
         }
     ]
 
@@ -35,7 +37,7 @@ export function Projects() {
 
             {projectList.map(project => (
                 <article className="project">
-                    <img className="project-img" src={project.img} alt="pedritooo" />
+                    <img className="project-img" src={project.img} alt="" />
 
 
                     <article>
@@ -43,6 +45,7 @@ export function Projects() {
                         {project.text ? project.text : null}
                         <div className="dis-flex">
                             {project.languages ? project.languages : null}
+                            {project.link}
                         </div>
                     </article>
                 </article>
@@ -51,6 +54,18 @@ export function Projects() {
         </section>
     )
 }
+
+
+export function Link({linkGithub}) {
+    return (
+        <div className='no-color-link'>
+            <a href={linkGithub}>
+                <img style={{ margin: 'auto', padding: '0 1vh 0 1vh' }} src="https://cdn.iconscout.com/icon/free/png-256/free-chain-link-connection-attach-37919.png?f=webp" alt="" />
+            </a>
+        </div>
+    );
+}
+
 
 export function HTML() {
     return (

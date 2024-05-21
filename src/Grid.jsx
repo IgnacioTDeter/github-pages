@@ -146,7 +146,7 @@ function MySkills() {
 function Curriculum() {
 
   return (
-    <a href="./archivos/Curriculum-ignacio-deter.pdf" download="Curriculum-ignacio-deter" className={`grid-item curriculum span-row-5`}>
+    <a href=" /github-pages/archivos/CV-ignacio-deter..pdf" className={`grid-item curriculum span-row-5`}>
       <article>
         <div>
           <h1>Descargar CV</h1>

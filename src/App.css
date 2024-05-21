@@ -348,6 +348,34 @@ main{
   border: none;
 }
 
+.no-color-link a{
+  text-decoration: none; 
+  color: inherit;
+  
+}
+
+.no-color-link{
+  display: flex;
+  margin: 1vh 0 1vh  ;
+  font-size: 1.4vh;
+  background-color:#1a1a1a;
+  width: fit-content;
+  padding: 5px 5px 5px 5px;
+  height: 2vh;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.no-color-link img{
+  width: auto;
+  border-radius: 0;
+  margin-right: 10px;
+}
+
+.no-color-link:hover{
+  background-color: white;
+}
+
 @media only screen and (max-width: 576px) {
   .grid-container {
     display: grid;
